@@ -1,0 +1,382 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+@font-face
+    font-family: "Mus"
+    src: url("../fonts/MuseoSansCyrl-500.ttf")
+
+@font-face
+    font-family: "Lemon"
+    src: url("../fonts/lemonmilkrus-by-lyajka.ttf")
+
+$white: #FFFFFF
+$grad: linear-gradient(to right, #2C97D4, #D32286)
+.body
+   background-color: #100B1E
+   font-family: "Mus"
+   position: relative
+   overflow-x: hidden
+
+.grad-btn
+    border: none
+    background: $grad
+    border-radius: 31px
+
+.text
+    color: $white
+    font-size: 24px
+
+.white-title
+    color: $white
+    font-size: 48px
+    font-family: "Lemon"
+
+.gradient 
+	color: transparent 
+	-webkit-background-clip: text
+	background-clip: text
+	background-image: linear-gradient(to right, #2C97D4, #D32286)
+    
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0px
+    padding-left: 15px
+    padding-right: 15px
+
+.nav-text
+    font-size: 20px
+    color: $white
+    margin-right: 40px
+    margin-left: 40px
+    text-decoration: none
+    cursor: pointer
+    z-index: 1
+    &:hover
+        color: #9052A6
+    &:last-child
+        margin-right: 0px
+    &:first-child
+        margin-left: 0px
+.nav__line
+    width: 48px
+    height: 1px
+    color: $white
+
+.first-section
+    position: relative
+    overflow: hidden
+    &__nav-container
+        padding-top: 48px
+        display: flex
+        flex-direction: row
+        justify-content: center
+    &__content-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__btn
+        width: 231px
+        height: 66px
+        margin-bottom: 196px
+    &__btn-link
+        color: $white
+        font-size: 20px
+        text-decoration: none
+        &:hover
+            color: $white
+    &__left-perple
+        position: absolute
+        top: -300px
+        left: 600px
+        z-index: -3
+    &__left-lines
+        position: absolute
+        top: -270px
+        left: 1100px
+        z-index: -1
+    &__right-perple
+        position: absolute
+        top: 400px
+        left: -200px
+        z-index: -3
+    &__right-lines
+        position: absolute
+        left: -250px
+        top: 420px
+    &__video
+        padding-top: 20px
+        padding-bottom: 100px
+        width: 1200px
+        height: 809px
+
+.second-section
+    position: relative
+    overflow: hidden
+    &__content-container
+        margin-bottom: 60px
+    &__first-title
+        text-align: right
+    &__second-title
+        font-size: 54px
+        font-family: "Lemon"
+        text-align: right
+    &__first-text
+        text-align: right
+        margin-bottom: 40px
+    &__second-text
+        text-align: right
+    &__wrapper-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    &__perple
+        position: absolute
+        top: -100px
+        left: 1000px
+        z-index: -3
+
+.third-section
+    background: url("../img/bgc.png") center
+    background-repeat: no-repeat
+    background-size: contain
+    height: 904px
+    margin-bottom: 160px
+    z-index: 1
+    &__first-title
+        margin-bottom: 0px
+    &__second-title
+        font-size: 54px
+        font-family: "Lemon"
+        margin-bottom: 0px
+    &__third-title
+        font-size: 54px
+        font-family: "Lemon"
+        margin-bottom: 0px
+    &__wrapper-container
+        padding-top: 100px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+    &__left-wrapper
+        position: relative
+        margin-right: 360px
+    &__text
+        font-size: 20px
+    &__ramka
+        position: absolute
+        top: -20px
+        left: -15px
+
+.four-section
+    overflow: hidden
+    &__wrapper-box
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 160px
+    &__title
+        font-size: 54px
+        font-family: "Lemon"
+    &__video-btn
+        background-color: rgba(0,0 ,0 ,0 )
+        border: none
+
+.five-section
+    &__content-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 200px
+    &__title
+        margin: 0 auto
+        text-align: center
+        margin-bottom: 100px
+    &__img
+        width: 100%
+    
+
+.six-section
+    margin-bottom: 120px
+    &__content-container
+        background: url("../icons/6.svg") center
+        background-repeat: repeat-y
+        
+    &__bgc-container
+        background: url("../img/bgc_2.png") center
+        background-repeat: no-repeat
+        background-size: contain
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 1
+    &__carusel-container
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 120px
+        padding-top: 120px
+    &__title
+        font-size: 54px
+        font-family: "Lemon"
+        margin-bottom: 120px
+        text-align: center
+
+.seven-section
+    overflow: hidden
+    position: relative
+    &__content-container
+        margin-bottom: 300px
+    &__wrapper-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    &__title
+        margin-bottom: 120px
+    &__first-text
+        margin-bottom: 20px
+    &__second-text
+        margin-bottom: 120px
+    &__btn
+        color: $white
+        width: 337px
+        height: 66px
+        font-size: 20px
+    &__krestiki
+        position: absolute
+        top: 140px
+        left: 1100px
+        z-index: -3
+
+.eight-section
+    &__title
+        text-align: center
+        font-size: 54px
+        font-family: "Lemon"
+        margin-bottom: 80px
+
+.grid-container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+    grid-row-gap: 160px
+    margin-bottom: 160px
+    align-items: center
+    justify-items: center
+
+.footer
+    &__img-container
+        background: url("../img/footer.png") center
+        background-repeat: no-repeat
+        background-size: contain
+    &__content-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-top: 40px
+        padding-bottom: 40px
+    &__text
+        text-decoration: none
+        cursor: pointer
+        &:hover
+            color: $white
+    &__line
+        width: 252px
+        border-top: 3px solid #FEFEFE
+    &__right-wrapper
+        display: flex
+        flex-direction: row
+    &__icons
+        margin-right: 40px
+        
+.krestiki
+    position: absolute
+    top: 1400px
+    z-index: -3
+
+.krug1
+    position: absolute
+    top: 2400px
+    left: -600px
+    z-index: -3
+
+.krug2
+    position: absolute
+    position: absolute
+    top: 3400px
+    left: 1400px
+    z-index: -3
+
+.p1
+    position: absolute
+    top: 2800px
+    left: -400px
+    z-index: -4
+
+.p2
+    position: absolute
+    top: 3200px
+    left: 900px
+    z-index: -4
+
+.p3
+    position: absolute
+    top: 4600px
+    left: 500px
+    z-index: -4
+
+.p4
+    position: absolute
+    top: 5600px
+    left: -300px
+    z-index: -4
+
+.p5
+    position: absolute
+    top: 6000px
+    left: 500px
+    z-index: -4
+
+.p6
+    position: absolute
+    top: 7000px
+    left: -400px
+    z-index: -4
+
+.p7
+    position: absolute
+    top: 7600px
+    left: 700px
+    z-index: -4
+
+.krug3
+    position: absolute
+    top: 7900px
+    left: 1100px
+    z-index: -4
+.sim-slider 
+  position: relative;
+
+
+.sim-slider-list 
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+
+
+.sim-slider-element 
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block
