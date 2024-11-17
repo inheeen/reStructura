@@ -740,6 +740,15 @@ table {
   z-index: -3;
 }
 
+.seven-section__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.seven-section__link:hover {
+  color: #FFFFFF;
+}
+
 .eight-section__title {
   text-align: center;
   font-size: 54px;
