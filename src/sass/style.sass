@@ -80,7 +80,7 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
     &__btn
         width: 231px
         height: 66px
-        margin-bottom: 196px
+        margin-bottom: 46px
     &__btn-link
         color: $white
         font-size: 20px
@@ -111,6 +111,8 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         padding-bottom: 100px
         width: 1200px
         height: 809px
+    &__scroll
+        margin-bottom: 196px
 
 .second-section
     position: relative
@@ -140,36 +142,52 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         z-index: -3
 
 .third-section
-    background: url("../img/bgc.png") center
-    background-repeat: no-repeat
-    background-size: contain
-    height: 904px
     margin-bottom: 160px
     z-index: 1
+    &__content-container
+        border: 3px solid black
+        border-image: linear-gradient(to bottom, #2C97D4, #D32286)
+        border-image-slice: 1
+        border-radius: 20px
+        min-height: 904px
     &__first-title
         margin-bottom: 0px
+        text-align: right
     &__second-title
         font-size: 54px
         font-family: "Lemon"
         margin-bottom: 0px
+        text-align: right
     &__third-title
         font-size: 54px
         font-family: "Lemon"
         margin-bottom: 0px
+        text-align: right
     &__wrapper-container
         padding-top: 100px
         display: flex
         flex-direction: row
         justify-content: space-around
+        align-items: center
+    &__right-wrapper
+        width: 400px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
     &__left-wrapper
+        width: 400px
         position: relative
         margin-right: 360px
     &__text
         font-size: 20px
+        width: 100%
+        text-align: right
     &__ramka
         position: absolute
-        top: -20px
-        left: -15px
+        top: -230px
+        width: 400px
+    &__img
+        width: 380px
 
 .four-section
     overflow: hidden
@@ -185,6 +203,10 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
     &__video-btn
         background-color: rgba(0,0 ,0 ,0 )
         border: none
+    &__img
+        width: 100%
+    &__left-wrapper
+        max-width: 400px
 
 .five-section
     &__content-container
@@ -198,6 +220,9 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         margin-bottom: 100px
     &__img
         width: 100%
+    &__carousel-caption
+        border-radius: 22px
+        background-color: rgba(76, 14, 57, 0.4)
     
 
 .six-section
@@ -264,6 +289,8 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         font-size: 54px
         font-family: "Lemon"
         margin-bottom: 80px
+    &__grid-img
+        width: 300px
 
 .grid-container
     display: grid
@@ -276,9 +303,10 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
 
 .footer
     &__img-container
-        background: url("../img/footer.png") center
-        background-repeat: no-repeat
-        background-size: contain
+       border: 3px solid black
+       border-image: linear-gradient(to bottom, #2C97D4, #D32286)
+       border-image-slice: 1
+       border-radius: 20px
     &__content-container
         display: flex
         flex-direction: row
@@ -366,8 +394,9 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
     left: 1100px
     z-index: -4
 .sim-slider 
-  position: relative;
-
+    position: absolute
+    top: -210px
+    left: 10px
 
 .sim-slider-list 
   margin: 0;
@@ -385,3 +414,225 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
   left: 0;
   top: 0;
   display: block
+
+.contact-section
+    position: fixed
+    z-index: 100
+    bottom: 20px
+    right: 20px
+    background: transparent
+    color: white
+    border: none
+    padding: 15px 32px
+    cursor: pointer
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__text
+        text-transform: uppercase
+        color: #2FB347
+.test
+    border-radius: 100px
+    border: 5px solid #2FB347
+    background: transparent
+    width: 70px
+    height: 70px
+    margin-bottom: 20px
+
+.btn-icon
+    width: 40px
+    height: 40px
+
+@media (max-width: 991px)
+    br
+        display: none
+    .container
+        width: 720px
+    .sim-slider
+        width: 200px
+    .first-section
+        &__scroll
+            margin-bottom: 100px
+    .second-section
+        &__img
+            max-width: 400px
+        &__right-wrapper
+            max-width: 50%
+        &__second-title
+            font-size: 48px
+    .text
+        font-size: 16px
+    .white-title
+        font-size: 40px
+    .third-section
+        &__content-container
+            min-height: 1204px
+        &__first-title
+            text-align: center
+        &__second-title
+            font-size: 48px
+            text-align: center
+        &__third-title
+            font-size: 48px
+            text-align: center
+        &__img
+            width: 300px
+        &__ramka
+            width: 320px
+            position: absolute
+            top: -10px
+            left: 0px
+        &__wrapper-container
+            flex-direction: column-reverse
+            align-items: center
+            justify-content: center
+            padding-top: 20px
+        &__right-wrapper
+            margin-bottom: 40px
+        &__left-wrapper
+            margin-right: 0px
+        &__text
+            text-align: center
+    .four-section
+        &__img
+            max-width: 400px
+        &__title
+            font-size: 48px
+        &__link
+            width: 60px
+            height: 60px
+    .five-section
+        &__title
+            margin-bottom: 60px
+    .six-section
+        &__title
+            font-size: 48px
+            margin-bottom: 80px
+    .carousel
+        width: 100%
+    .sim-slider
+        position: absolute
+        top: 10px
+    .seven-section
+        &__title
+            margin-bottom: 80px
+        &__right-wrapper
+            max-width: 50%
+        &__img
+            max-width: 400px
+        &__wrapper-container
+            align-items: center
+        &__second-text
+            margin-bottom: 60px
+        &__content-container
+            margin-bottom: 120px
+    .eight-section
+        &__title
+            font-size: 48px
+    .grid-container
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(508px, 1fr))
+        gap: 10px
+        grid-auto-rows: minmax(100px, auto)
+        grid-row-gap: 24px
+        margin-bottom: 64px
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+    .nav-text
+        font-size: 16px
+        margin: 10px
+    .nav
+        &__line
+            margin: 0px
+    .first-section
+        &__nav-container
+            display: flex
+            flex-direction: row
+            align-items: center
+        &__video
+            width: 100%
+    .second-section
+        &__first-title
+            text-align: center
+        &__second-title
+            text-align: center
+        &__wrapper-container
+            flex-direction: column-reverse
+        &__first-text
+            text-align: center
+            width: 100%
+        &__second-text
+            text-align: center
+            width: 100%
+        &__right-wrapper
+            max-width: 100%
+    .third-section
+        &__right-wrapper
+            align-items: center 
+            width: 100%
+    .four-section
+        &__wrapper-box
+            flex-direction: column-reverse
+        &__text
+            text-align: center
+        &__title
+            text-align: center
+        &__left-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: center
+    .seven-section
+        &__img
+            display: none
+        &__left-wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &__first-text
+            text-align: center
+        &__second-text
+            text-align: center
+        &__title
+            text-align: center
+
+
+@media (max-width: 575px)
+    .container
+        width: 100%
+        padding: 15px
+    .first-section
+        &__video
+            height: 400px
+        &__right-perple
+            top: 10px
+            left: -300px
+        &__right-lines
+            top: 80px
+            width: 300px
+            left: -100px
+    .white-title
+        font-size: 32px
+    .second-section
+        &__second-title
+            font-size: 36px
+            margin-bottom: 40px
+    .third-section
+        &__second-title
+            font-size: 36px
+        &__third-title
+            font-size: 36px
+            margin-bottom: 40px
+    .four-section
+        &__title
+            font-size: 36px
+    .six-section
+        &__title
+            font-size: 36px
+        &__carusel-container
+            margin-bottom: 0px
+    .eight-section
+        &__title
+            font-size: 36px
