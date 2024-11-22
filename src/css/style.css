@@ -405,7 +405,6 @@ table {
   font-family: "Mus";
   position: relative;
   overflow-x: hidden;
-  background: url("../img/mp.png") center/cover;
 }
 
 .grad-btn {
@@ -543,7 +542,7 @@ table {
 
 .second-section {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .second-section__content-container {
@@ -583,9 +582,17 @@ table {
   z-index: -3;
 }
 
+.second-section__second-img {
+  position: absolute;
+  top: -200px;
+  z-index: -3;
+}
+
 .third-section {
   margin-bottom: 160px;
   z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .third-section__content-container {
@@ -624,7 +631,7 @@ table {
 }
 
 .third-section__right-wrapper {
-  width: 400px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -652,7 +659,24 @@ table {
   width: 380px;
 }
 
+.third-section__second-img {
+  position: absolute;
+  top: -140px;
+  width: 1200px;
+  left: -400px;
+  z-index: -3;
+}
+
+.third-section__third-img {
+  position: absolute;
+  top: 170px;
+  width: 800px;
+  left: 1100px;
+  z-index: -3;
+}
+
 .four-section {
+  position: relative;
   overflow: hidden;
 }
 
@@ -680,6 +704,21 @@ table {
 
 .four-section__left-wrapper {
   max-width: 400px;
+}
+
+.four-section__f-img {
+  position: absolute;
+  top: -200px;
+  right: -400px;
+  z-index: -3;
+}
+
+.four-section__s-img {
+  position: absolute;
+  top: -80px;
+  width: 700px;
+  left: -100px;
+  z-index: -3;
 }
 
 .five-section__content-container {
@@ -789,6 +828,11 @@ table {
   color: #FFFFFF;
 }
 
+.eight-section {
+  position: relative;
+  overflow: hidden;
+}
+
 .eight-section__title {
   text-align: center;
   font-size: 54px;
@@ -800,6 +844,19 @@ table {
   width: 300px;
 }
 
+.eight-section__f-img {
+  position: absolute;
+  top: 20px;
+  left: -90px;
+  z-index: -3;
+}
+
+.eight-section__s-img {
+  position: absolute;
+  top: -180px;
+  right: -400px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -808,6 +865,11 @@ table {
   margin-bottom: 160px;
   align-items: center;
   justify-items: center;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
 }
 
 .footer__img-container {
@@ -847,6 +909,10 @@ table {
 
 .footer__icons {
   margin-right: 40px;
+}
+
+.footer__f-img {
+  position: absolute;
 }
 
 .sim-slider {

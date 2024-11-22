@@ -16,7 +16,7 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
     font-family: "Mus"
     position: relative
     overflow-x: hidden
-    background: url("../img/mp.png") center/cover
+    //background: url("../img/mp.png") center/cover
     //background-repeat: repeat-y
     //background-size: cover
 
@@ -119,7 +119,7 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
 
 .second-section
     position: relative
-    overflow: hidden
+    overflow-x: hidden
     &__content-container
         margin-bottom: 60px
     &__first-title
@@ -143,10 +143,16 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         top: -100px
         left: 1000px
         z-index: -3
+    &__second-img
+        position: absolute
+        top: -200px
+        z-index: -3
 
 .third-section
     margin-bottom: 160px
     z-index: 1
+    position: relative
+    overflow: hidden
     &__content-container
         border: 3px solid black
         border-image: linear-gradient(to bottom, #2C97D4, #D32286)
@@ -173,7 +179,7 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         justify-content: space-around
         align-items: center
     &__right-wrapper
-        width: 400px
+        max-width: 700px
         display: flex
         flex-direction: column
         align-items: flex-end
@@ -191,8 +197,21 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         width: 400px
     &__img
         width: 380px
+    &__second-img
+        position: absolute
+        top: -140px
+        width: 1200px
+        left: -400px
+        z-index: -3
+    &__third-img
+        position: absolute
+        top: 170px
+        width: 800px
+        left: 1100px
+        z-index: -3
 
 .four-section
+    position: relative
     overflow: hidden
     &__wrapper-box
         display: flex
@@ -210,6 +229,17 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         width: 100%
     &__left-wrapper
         max-width: 400px
+    &__f-img
+        position: absolute
+        top: -200px
+        right: -400px
+        z-index: -3
+    &__s-img
+        position: absolute
+        top: -80px
+        width: 700px
+        left: -100px
+        z-index: -3
 
 .five-section
     &__content-container
@@ -287,6 +317,8 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
             color: $white
 
 .eight-section
+    position: relative
+    overflow: hidden
     &__title
         text-align: center
         font-size: 54px
@@ -294,7 +326,15 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         margin-bottom: 80px
     &__grid-img
         width: 300px
-
+    &__f-img
+        position: absolute
+        top: 20px
+        left: -90px
+        z-index: -3
+    &__s-img
+        position: absolute
+        top: -180px
+        right: -400px
 .grid-container
     display: grid
     grid-template-columns: repeat(3, 1fr)
@@ -305,6 +345,8 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
     justify-items: center
 
 .footer
+    position: relative
+    overflow: hidden
     &__img-container
        border: 3px solid black
        border-image: linear-gradient(to bottom, #2C97D4, #D32286)
@@ -330,6 +372,9 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         flex-direction: row
     &__icons
         margin-right: 40px
+    &__f-img
+        position: absolute
+        
         
 
 .sim-slider 
