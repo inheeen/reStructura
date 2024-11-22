@@ -1106,6 +1106,7 @@ table {
     grid-auto-rows: minmax(100px, auto);
     grid-row-gap: 24px;
     margin-bottom: 64px;
+    justify-content: center;
   }
 }
 
@@ -1238,5 +1239,8 @@ table {
   .footer__content-container {
     display: flex;
     justify-content: center;
+  }
+  .nav-text {
+    text-align: center;
   }
 }
