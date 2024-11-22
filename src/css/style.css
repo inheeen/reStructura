@@ -855,6 +855,7 @@ table {
   position: absolute;
   top: -180px;
   right: -400px;
+  z-index: -3;
 }
 
 .grid-container {
@@ -1049,6 +1050,11 @@ table {
     width: 60px;
     height: 60px;
   }
+  .four-section__f-img {
+    width: 600px;
+    top: -150px;
+    right: -200px;
+  }
   .five-section__title {
     margin-bottom: 60px;
   }
@@ -1081,8 +1087,17 @@ table {
   .seven-section__content-container {
     margin-bottom: 120px;
   }
+  .seven-section__krestiki {
+    left: 600px;
+    top: 40px;
+  }
   .eight-section__title {
     font-size: 48px;
+  }
+  .eight-section__f-img {
+    top: 400px;
+    left: -300px;
+    width: 800px;
   }
   .grid-container {
     display: grid;
@@ -1168,6 +1183,9 @@ table {
   }
   .seven-section__title {
     text-align: center;
+  }
+  .seven-section__krestiki {
+    display: none;
   }
 }
 

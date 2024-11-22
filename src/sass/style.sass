@@ -335,6 +335,7 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         position: absolute
         top: -180px
         right: -400px
+        z-index: -3
 .grid-container
     display: grid
     grid-template-columns: repeat(3, 1fr)
@@ -486,6 +487,10 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
         &__link
             width: 60px
             height: 60px
+        &__f-img
+            width: 600px
+            top: -150px
+            right: -200px
     .five-section
         &__title
             margin-bottom: 60px
@@ -511,9 +516,16 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
             margin-bottom: 60px
         &__content-container
             margin-bottom: 120px
+        &__krestiki
+            left: 600px
+            top: 40px
     .eight-section
         &__title
             font-size: 48px
+        &__f-img
+            top: 400px
+            left: -300px
+            width: 800px
     .grid-container
         display: grid
         grid-template-columns: repeat(auto-fit, minmax(508px, 1fr))
@@ -582,6 +594,8 @@ $grad: linear-gradient(to right, #2C97D4, #D32286)
             text-align: center
         &__title
             text-align: center
+        &__krestiki
+            display: none
 
 
 @media (max-width: 575px)
