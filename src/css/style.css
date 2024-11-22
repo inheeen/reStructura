@@ -405,6 +405,7 @@ table {
   font-family: "Mus";
   position: relative;
   overflow-x: hidden;
+  background: url("../img/mp.png") center/cover;
 }
 
 .grad-btn {
@@ -848,83 +849,6 @@ table {
   margin-right: 40px;
 }
 
-.krestiki {
-  position: absolute;
-  top: 1400px;
-  z-index: -3;
-}
-
-.krug1 {
-  position: absolute;
-  top: 2400px;
-  left: -600px;
-  z-index: -3;
-}
-
-.krug2 {
-  position: absolute;
-  position: absolute;
-  top: 3400px;
-  left: 1400px;
-  z-index: -3;
-}
-
-.p1 {
-  position: absolute;
-  top: 2800px;
-  left: -400px;
-  z-index: -4;
-}
-
-.p2 {
-  position: absolute;
-  top: 3200px;
-  left: 900px;
-  z-index: -4;
-}
-
-.p3 {
-  position: absolute;
-  top: 4600px;
-  left: 500px;
-  z-index: -4;
-}
-
-.p4 {
-  position: absolute;
-  top: 5600px;
-  left: -300px;
-  z-index: -4;
-}
-
-.p5 {
-  position: absolute;
-  top: 6000px;
-  left: 500px;
-  z-index: -4;
-}
-
-.p6 {
-  position: absolute;
-  top: 7000px;
-  left: -400px;
-  z-index: -4;
-}
-
-.p7 {
-  position: absolute;
-  top: 7600px;
-  left: 700px;
-  z-index: -4;
-}
-
-.krug3 {
-  position: absolute;
-  top: 7900px;
-  left: 1100px;
-  z-index: -4;
-}
-
 .sim-slider {
   position: absolute;
   top: -210px;
@@ -1223,5 +1147,12 @@ table {
   }
   .eight-section__title {
     font-size: 36px;
+  }
+  .footer__left-wrapper {
+    display: none;
+  }
+  .footer__content-container {
+    display: flex;
+    justify-content: center;
   }
 }
