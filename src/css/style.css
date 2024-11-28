@@ -527,6 +527,7 @@ table {
   position: absolute;
   left: -250px;
   top: 420px;
+  z-index: -3;
 }
 
 .first-section__video {
